@@ -1,10 +1,10 @@
 {
   "env": {
     "browser": true,
-    // "es2021": true,
+    "es2021": true,
     "node": true
   },
-  "extends": ["plugin:react/recommended", "airbnb", "prettier", "eslint-config-prettier"],
+  "extends": ["plugin:react/recommended", "airbnb", "airbnb/hooks", "prettier", "eslint-config-prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
