@@ -1,0 +1,19 @@
+{
+  "name": "photography-v2.0",
+  "version": "1.0.0",
+  "description": "Second iteration of my photography website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Liam Dawson",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^9.5.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
