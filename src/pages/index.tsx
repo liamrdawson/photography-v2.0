@@ -26,7 +26,7 @@ const App = () => {
         >
           Welcome to Next.js!
         </div>
-        <PrimaryButton>Check this out</PrimaryButton>
+        <PrimaryButton >Check this out</PrimaryButton>
       </div>
     </ThemeProvider>
   )
