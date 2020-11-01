@@ -1,5 +1,5 @@
-import { ThemeProvider } from 'styled-components'
-import { PrimaryButton } from 'src/components/Button'
+import { ThemeProvider } from 'emotion-theming'
+import PrimaryButton from 'src/components/Button'
 import { defaultTheme } from 'src/utils/themes'
 import { primaryFont, typeScale } from 'src/utils/typography'
 
@@ -26,7 +26,7 @@ const App = () => {
         >
           Welcome to Next.js!
         </div>
-        <PrimaryButton >Check this out</PrimaryButton>
+        <PrimaryButton text="Hello 🌏" />
       </div>
     </ThemeProvider>
   )
