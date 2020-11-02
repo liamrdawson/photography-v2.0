@@ -2,8 +2,13 @@
 import styled from '@emotion/styled'
 import { typeScale } from 'src/utils/typography'
 
-//  TO DO - Revisit suing proptypes of any here
-//        - is there a better way to implement Typescript here?
+interface IButtonProps {
+  readonly theme: {
+    colour: {
+      [key: string]: string
+    }
+  }
+}
 
 export const Button = styled.button`
   box-sizing: border-box;
@@ -15,59 +20,63 @@ export const Button = styled.button`
   font-weight: 900;
   font-size: ${typeScale.paragraph};
   transition: background-color 0.2s linear, color 0.2s linear;
-  color: ${(props: any) => props.theme.colour.tertiary};
+  color: ${(props: IButtonProps) => props.theme.colour.tertiary};
 `
 
 export const PrimaryButton = styled(Button)`
-  background-color: ${(props: any) => props.theme.colour.primary};
-  color: ${(props: any) => props.theme.colour.textOnPrimary};
+  background-color: ${(props: IButtonProps) => props.theme.colour.primary};
+  color: ${(props: IButtonProps) => props.theme.colour.textOnPrimary};
   border: none;
   text-transform: uppercase;
   &:hover {
-    background-color: ${(props: any) => props.theme.colour.primaryHover};
+    background-color: ${(props: IButtonProps) =>
+      props.theme.colour.primaryHover};
   }
   &:active {
-    background-color: ${(props: any) => props.theme.colour.primaryActive};
+    background-color: ${(props: IButtonProps) =>
+      props.theme.colour.primaryActive};
   }
   &:disabled {
-    background-color: ${(props: any) => props.theme.colour.disabled};
+    background-color: ${(props: IButtonProps) => props.theme.colour.disabled};
     cursor: not-allowed;
   }
 `
 
 export const SecondaryButton = styled(Button)`
-  background-color: ${(props: any) => props.theme.colour.secondary};
-  color: ${(props: any) => props.theme.colour.primary};
-  border: solid 1px ${(props: any) => props.theme.colour.primary};
+  background-color: ${(props: IButtonProps) => props.theme.colour.secondary};
+  color: ${(props: IButtonProps) => props.theme.colour.primary};
+  border: solid 1px ${(props: IButtonProps) => props.theme.colour.primary};
   text-transform: uppercase;
   &:hover {
-    border-color: ${(props: any) => props.theme.colour.primaryHover};
-    color: ${(props: any) => props.theme.colour.primaryHover};
+    border-color: ${(props: IButtonProps) => props.theme.colour.primaryHover};
+    color: ${(props: IButtonProps) => props.theme.colour.primaryHover};
   }
   &:active {
-    border-color: ${(props: any) => props.theme.colour.secondaryActive};
-    color: ${(props: any) => props.theme.colour.secondaryActive};
+    border-color: ${(props: IButtonProps) =>
+      props.theme.colour.secondaryActive};
+    color: ${(props: IButtonProps) => props.theme.colour.secondaryActive};
   }
   &:disabled {
-    border-color: ${(props: any) => props.theme.colour.secondaryActive};
-    color: ${(props: any) => props.theme.colour.disabled};
+    border-color: ${(props: IButtonProps) =>
+      props.theme.colour.secondaryActive};
+    color: ${(props: IButtonProps) => props.theme.colour.disabled};
     cursor: not-allowed;
   }
 `
 
 export const TertiaryButton = styled(Button)`
-  background-color: ${(props: any) => props.theme.colour.secondary};
-  color: ${(props: any) => props.theme.colour.tertiary};
+  background-color: ${(props: IButtonProps) => props.theme.colour.secondary};
+  color: ${(props: IButtonProps) => props.theme.colour.tertiary};
   border: none;
   &:hover {
     text-decoration: underline;
   }
   &:active {
-    color: ${(props: any) => props.theme.colour.tertiaryActive};
+    color: ${(props: IButtonProps) => props.theme.colour.tertiaryActive};
     text-decoration: underline;
   }
   &:disabled {
-    color: ${(props: any) => props.theme.colour.disabled};
+    color: ${(props: IButtonProps) => props.theme.colour.disabled};
     cursor: not-allowed;
   }
 `
