@@ -14,7 +14,9 @@
   "author": "Liam Dawson",
   "license": "ISC",
   "dependencies": {
-    "@stitches/react": "0.0.2",
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
+    "emotion-theming": "^10.0.27",
     "next": "^9.5.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -22,7 +24,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
+    "@emotion/babel-preset-css-prop": "^10.0.27",
     "@storybook/addon-actions": "^6.0.27",
+    "@storybook/addon-controls": "^6.0.27",
     "@storybook/addon-essentials": "^6.0.27",
     "@storybook/addon-links": "^6.0.27",
     "@storybook/react": "^6.0.27",
@@ -30,6 +34,7 @@
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.6.0",
     "babel-loader": "^8.1.0",
+    "babel-plugin-emotion": "^10.0.33",
     "babel-plugin-react-require": "^3.1.3",
     "eslint": "^7.12.0",
     "eslint-config-airbnb": "^18.2.0",

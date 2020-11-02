@@ -1,37 +1,31 @@
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/react/types-6-0'
-
+import React from 'react'
 import Button from './Button'
 
+interface ButtonProps {
+  background?: string
+  label?: string
+}
+
 export default {
-  title: 'Example/Button',
+  title: './Button',
   component: Button,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 } as Meta
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />
+// We create a “template” of how args map to rendering
+const Template: Story<ButtonProps> = (args: any) => <Button {...args}></Button>
 
+// Each story then reuses that template
 export const Primary = Template.bind({})
-Primary.args = {
-  primary: true,
-  label: 'Button',
-}
+Primary.args = { background: '#ff0', label: 'Button' }
+
+// The template is reused across stories.
+// Template.bind({}) makes a copy of the function which reduces code duplication.
+// Similarly,...Primary.args makes a copy of the data, reducing data duplication.
 
 export const Secondary = Template.bind({})
-Secondary.args = {
-  label: 'Button',
-}
+Secondary.args = { ...Primary.args, label: '😄👍😍💯' }
 
-export const Large = Template.bind({})
-Large.args = {
-  size: 'large',
-  label: 'Button',
-}
-
-export const Small = Template.bind({})
-Small.args = {
-  size: 'small',
-  label: 'Button',
-}
+export const Tertiary = Template.bind({})
+Tertiary.args = { ...Primary.args, label: '📚📕📈🤓' }
