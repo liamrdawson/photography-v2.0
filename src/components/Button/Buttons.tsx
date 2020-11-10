@@ -1,6 +1,7 @@
 // import { css } from '@emotion/core'
 import styled from '@emotion/styled'
-import { typeScale } from 'src/utils/typography'
+import { FunctionComponent } from 'react'
+import { typeScale } from '../../utils/typography'
 
 interface IButtonProps {
   readonly theme: {
@@ -10,7 +11,7 @@ interface IButtonProps {
   }
 }
 
-export const Button = styled.button`
+export const Button: FunctionComponent = styled.button`
   box-sizing: border-box;
   padding: 12px 16px;
   border-radius: 2px;

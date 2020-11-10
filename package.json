@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "storybook": "start-storybook -p 6006 --no-dll",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook --no-dll"
   },
   "author": "Liam Dawson",
   "license": "ISC",
@@ -25,11 +25,11 @@
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@emotion/babel-preset-css-prop": "^10.0.27",
-    "@storybook/addon-actions": "^6.0.27",
+    "@storybook/addon-actions": "^6.0.28",
     "@storybook/addon-controls": "^6.0.27",
-    "@storybook/addon-essentials": "^6.0.27",
-    "@storybook/addon-links": "^6.0.27",
-    "@storybook/react": "^6.0.27",
+    "@storybook/addon-essentials": "^6.0.28",
+    "@storybook/addon-links": "^6.0.28",
+    "@storybook/react": "^6.0.28",
     "@types/node": "^14.14.2",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.6.0",
