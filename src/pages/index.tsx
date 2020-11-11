@@ -2,8 +2,8 @@ import { ThemeProvider } from 'emotion-theming'
 import {
   PrimaryButton,
   SecondaryButton,
-  TertiaryButton,
-} from 'src/components/Button'
+  TertiaryButton
+} from 'src/components/Button/Buttons'
 import { defaultTheme } from 'src/utils/themes'
 import { primaryFont } from 'src/utils/typography'
 
@@ -19,34 +19,19 @@ const App = () => {
           justifyContent: 'space-around',
           margin: 'auto',
           textAlign: 'center',
-          alignItems: 'center',
+          alignItems: 'center'
         }}
       >
         <div
           style={{
-            fontFamily: primaryFont,
+            fontFamily: primaryFont
           }}
         >
           Welcome to Next.js!
         </div>
-        <PrimaryButton>
-          {'Hello '}
-          <span role="img" aria-label="world">
-            🌏
-          </span>
-        </PrimaryButton>
-        <SecondaryButton>
-          {'Hello '}
-          <span role="img" aria-label="moon">
-            🌚
-          </span>
-        </SecondaryButton>
-        <TertiaryButton>
-          {'Hello '}
-          <span role="img" aria-label="black phillip">
-            👹
-          </span>
-        </TertiaryButton>
+        <PrimaryButton label="Primary Button" />
+        <SecondaryButton label="Secondary Button" />
+        <TertiaryButton label="Tertiary Button" />
       </div>
     </ThemeProvider>
   )
