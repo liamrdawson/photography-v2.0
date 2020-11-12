@@ -1,10 +1,11 @@
 import { css } from '@emotion/core'
-import { ITheme } from '../../utils/themes'
-import { typeScale } from '../../utils/typography'
+import { ITheme } from '../../../utils/themes'
+import { typeScale } from '../../../utils/typography'
+import { SPACING } from '../../../utils/spacing'
 
 export const base = css({
   boxSizing: 'border-box',
-  padding: '12px 16px',
+  padding: `${SPACING[5]}px ${SPACING[6]}px`,
   borderRadius: 2,
   minWidth: 100,
   maxWidth: 300,

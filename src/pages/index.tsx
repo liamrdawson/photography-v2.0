@@ -3,7 +3,7 @@ import {
   PrimaryButton,
   SecondaryButton,
   TertiaryButton
-} from 'src/components/Button/Buttons'
+} from 'src/components/atoms/Button/Buttons'
 import { defaultTheme } from 'src/utils/themes'
 import { primaryFont } from 'src/utils/typography'
 
