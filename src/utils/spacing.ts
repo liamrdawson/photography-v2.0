@@ -8,7 +8,7 @@ export const SPACING = {
   7: 20,
   8: 24,
   9: 28,
-  10: 32,
+  10: 32
 }
 
 export default SPACING

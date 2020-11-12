@@ -9,5 +9,5 @@ export const typeScale = {
   mediumText: `1.25rem`,
   captionText: `1.25rem`,
   paragraph: `1rem`,
-  smallText: `0.8rem`,
+  smallText: `0.8rem`
 }

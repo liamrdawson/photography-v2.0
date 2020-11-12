@@ -7,7 +7,7 @@ type ButtonTypes = {
   label: string
 }
 
-export const PrimaryButton: Story = (props: ButtonTypes) => {
+export const PrimaryButton = (props: ButtonTypes) => {
   const { label } = props
   return (
     <button type="button" css={primary}>

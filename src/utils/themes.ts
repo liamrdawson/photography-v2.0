@@ -22,6 +22,8 @@ export interface ITheme {
 
     text: string
     textInverted: string
+
+    formBackground: string
   }
   primaryFont: string
 }
@@ -46,7 +48,9 @@ export const defaultTheme: ITheme = {
     accent: BLUE[200],
 
     text: BLACK[500],
-    textInverted: NEUTRAL[100]
+    textInverted: NEUTRAL[100],
+
+    formBackground: NEUTRAL[200]
   },
   primaryFont
 }
@@ -71,7 +75,9 @@ export const darkTheme: ITheme = {
     accent: BLUE[200],
 
     text: NEUTRAL[100],
-    textInverted: BLACK[500]
+    textInverted: BLACK[500],
+
+    formBackground: NEUTRAL[200]
   },
   primaryFont
 }
