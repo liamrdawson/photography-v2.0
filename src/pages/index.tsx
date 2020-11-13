@@ -4,6 +4,7 @@ import {
   SecondaryButton,
   TertiaryButton
 } from 'src/components/atoms/Button/Buttons'
+import Text from 'src/components/atoms/Text/Text'
 import { defaultTheme } from 'src/utils/themes'
 import { primaryFont } from 'src/utils/typography'
 
@@ -32,6 +33,7 @@ const App = () => {
         <PrimaryButton label="Primary Button" />
         <SecondaryButton label="Secondary Button" />
         <TertiaryButton label="Tertiary Button" />
+        <Text element="h1">Hello World!</Text>
       </div>
     </ThemeProvider>
   )
