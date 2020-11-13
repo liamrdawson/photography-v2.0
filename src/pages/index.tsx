@@ -33,7 +33,7 @@ const App = () => {
         <PrimaryButton label="Primary Button" />
         <SecondaryButton label="Secondary Button" />
         <TertiaryButton label="Tertiary Button" />
-        <Text element="h1">Hello World!</Text>
+        <Text element="h2">Hello World!</Text>
       </div>
     </ThemeProvider>
   )
