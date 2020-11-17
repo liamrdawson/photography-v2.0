@@ -1,12 +1,14 @@
+// Libraries
 import { ThemeProvider } from 'emotion-theming'
+// Utils
+import { defaultTheme } from 'src/theme/themes'
+// Components
 import {
   PrimaryButton,
   SecondaryButton,
   TertiaryButton
-} from 'src/components/atoms/Button/Buttons'
-import Text from 'src/components/atoms/Text/Text'
-import { defaultTheme } from 'src/utils/themes'
-import { primaryFont } from 'src/utils/typography'
+} from 'src/components/atoms/Button'
+import { Heading } from 'src/components/atoms/Heading'
 
 const App = () => {
   return (
@@ -23,17 +25,11 @@ const App = () => {
           alignItems: 'center'
         }}
       >
-        <div
-          style={{
-            fontFamily: primaryFont
-          }}
-        >
-          Welcome to Next.js!
-        </div>
+        <Heading element="h1">My dope site!</Heading>
         <PrimaryButton label="Primary Button" />
         <SecondaryButton label="Secondary Button" />
         <TertiaryButton label="Tertiary Button" />
-        <Text element="h2">Hello World!</Text>
+        <Heading element="p">Hello World!</Heading>
       </div>
     </ThemeProvider>
   )
