@@ -1,4 +1,4 @@
-import { jsx, css } from '@emotion/core'
+import { css } from '@emotion/core'
 
 import { ITheme } from '../../../theme/themes'
 import { typeScale } from '../../../theme/typography'

@@ -2,13 +2,11 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
 
-import {labelAndForm, labelStyle, input} from './FormInput.styles'
+import { labelAndForm, labelStyle, input } from './FormInput.styles'
 
 type FormTypes = {
   label: string
-  type: string
 }
-
 
 export const TextInput = (props: FormTypes) => {
   const { label, type } = props
