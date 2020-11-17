@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'emotion-theming'
-import { defaultTheme } from '../src/utils/themes'
+import { defaultTheme } from '../src/theme/themes'
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' }

@@ -1,5 +1,5 @@
-// import original module declarations
-import 'styled-components'
+// // import original module declarations
+// import 'src/theme/node_modules/styled-components'
 
-// and extend them!
-declare module 'styled-components'
+// // and extend them!
+// declare module 'styled-components'

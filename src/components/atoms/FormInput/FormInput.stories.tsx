@@ -15,6 +15,8 @@ export default {
   }
 } as Meta
 
+// TODO: [ ] - change args from being implicit any
+
 const TextInputTemplate = (args) => <TextInput {...args} />
 export const FormInput = TextInputTemplate.bind({})
 FormInput.args = {
