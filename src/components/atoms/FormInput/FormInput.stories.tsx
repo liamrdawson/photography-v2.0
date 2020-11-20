@@ -4,7 +4,7 @@ import { Meta } from '@storybook/react/types-6-0'
 import { TextInput, TextArea } from './FormInput'
 
 export default {
-  title: 'Example/FormInput',
+  title: 'Atoms/FormInput',
   component: TextInput,
   parameters: {
     docs: {

@@ -9,6 +9,7 @@ import {
   TertiaryButton
 } from 'src/components/atoms/Button'
 import { Heading } from 'src/components/atoms/Heading'
+import {Text} from 'src/components/atoms/Text'
 
 const App = () => {
   return (
@@ -25,11 +26,11 @@ const App = () => {
           alignItems: 'center'
         }}
       >
-        <Heading element="h1">My dope site!</Heading>
+        <Heading element="h1">👋 🌏</Heading>
         <PrimaryButton label="Primary Button" />
         <SecondaryButton label="Secondary Button" />
         <TertiaryButton label="Tertiary Button" />
-        <Heading element="p">Hello World!</Heading>
+        <Text fontWeight='light' fontSize='large'>I am a text element!</Text>
       </div>
     </ThemeProvider>
   )

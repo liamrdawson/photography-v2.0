@@ -4,7 +4,7 @@ import { Meta } from '@storybook/react/types-6-0'
 import { PrimaryButton, SecondaryButton, TertiaryButton } from './Buttons'
 
 export default {
-  title: 'Example/Button',
+  title: 'Atoms/Button',
   component: PrimaryButton,
   parameters: {
     docs: {
@@ -14,6 +14,8 @@ export default {
     }
   }
 } as Meta
+
+// TODO: [ ] - change args from being implicit any
 
 const PrimaryTemplate = (args) => <PrimaryButton {...args} />
 export const Primary = PrimaryTemplate.bind({})
