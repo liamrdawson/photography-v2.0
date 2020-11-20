@@ -11,7 +11,7 @@ export const base = css({
   maxWidth: 300,
   cursor: 'pointer',
   fontWeight: 900,
-  fontSize: typeScale.paragraph,
+  fontSize: typeScale.normal,
   transition: 'background-color 0.2s linear, color 0.2s linear'
 })
 
