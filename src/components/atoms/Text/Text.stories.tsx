@@ -1,11 +1,12 @@
 import React from 'react'
 import { Meta } from '@storybook/react/types-6-0'
 
-import { Heading } from './Heading'
+import { Text } from './Text'
+
 
 export default {
-  title: 'Atoms/Heading',
-  component: Heading,
+  title: 'Atoms/Text',
+  component: Text,
   parameters: {
     docs: {
       description: {
@@ -15,10 +16,16 @@ export default {
     }
   },
   argTypes: {
-    element: {
+    fontSize: {
       control: {
         type: 'select',
-        options: ['h1', 'h2', 'h3', 'h4']
+        options: ['small', 'normal', 'caption', 'medium', 'large']
+      }
+    },
+    fontWeight: {
+      control: {
+        type: 'select',
+        options: ['light', 'medium', 'bold', 'black']
       }
     }
   }
@@ -26,9 +33,10 @@ export default {
 
 // TODO: [ ] - change args from being implicit any
 
-const HeadingTemplate = (args) => <Heading {...args} />
-export const HeadingLevel = HeadingTemplate.bind({})
-HeadingLevel.args = {
+const TextTemplate = (args) => <Text {...args} />
+export const TextComponent = TextTemplate.bind({})
+TextComponent.args = {
   children: 'The quick brown fox jumps over the lazy dog.',
-  element: 'h1'
+  fontSize: 'normal',
+  fontWeight: 'light'
 }
