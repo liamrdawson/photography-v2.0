@@ -1,7 +1,7 @@
 import { css } from '@emotion/core'
 
 import { ITheme } from '../../../theme/themes'
-import { typeScale } from '../../../theme/typography'
+import { typeScale, typeWeight} from '../../../theme/typography'
 import { SPACING } from '../../../theme/spacing'
 
 export const labelAndForm = (theme: ITheme) =>
@@ -18,14 +18,14 @@ export const input = (theme: ITheme) =>
     borderRadius: 2,
     borderWidth: SPACING[1],
     padding: SPACING[4],
-    fontSize: typeScale.paragraph,
+    fontSize: typeScale.normal,
     backgroundColor: theme.colour.formBackground,
     borderColor: theme.colour.primary
   })
 
 export const labelStyle = (theme: ITheme) =>
   css({
-    fontSize: typeScale.smallText,
-    fontWeight: 300,
+    fontSize: typeScale.small,
+    fontWeight: typeWeight.light,
     marginBottom: SPACING[3]
   })
