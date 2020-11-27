@@ -1,10 +1,10 @@
 import React from 'react'
-import { Meta } from '@storybook/react/types-6-0'
+import { Meta, Story } from '@storybook/react/types-6-0'
 
-import { Heading } from './Heading'
+import { Heading, HeadingProps } from './Heading'
 
 export default {
-  title: 'Atoms/Heading',
+  title: 'Components/Atoms/Heading',
   component: Heading,
   parameters: {
     docs: {
@@ -24,9 +24,7 @@ export default {
   }
 } as Meta
 
-// TODO: [ ] - change args from being implicit any
-
-const HeadingTemplate = (args) => <Heading {...args} />
+const HeadingTemplate: Story<HeadingProps> = (args) => <Heading {...args} />
 export const HeadingLevel = HeadingTemplate.bind({})
 HeadingLevel.args = {
   children: 'The quick brown fox jumps over the lazy dog.',

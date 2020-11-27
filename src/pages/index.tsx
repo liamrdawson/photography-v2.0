@@ -10,6 +10,7 @@ import {
 } from 'src/components/atoms/Button'
 import { Heading } from 'src/components/atoms/Heading'
 import {Text} from 'src/components/atoms/Text'
+import {Nav} from 'src/components/molecules/Nav'
 
 const App = () => {
   return (
@@ -26,11 +27,21 @@ const App = () => {
           alignItems: 'center'
         }}
       >
+        <Nav pages={[
+          { 
+            pageName: 'Number 1',
+            pathName: '/one'
+          },
+          { 
+            pageName: 'Duos',
+            pathName: '/two'
+          }, 
+          ]} />
         <Heading element="h1">👋 🌏</Heading>
         <PrimaryButton label="Primary Button" />
         <SecondaryButton label="Secondary Button" />
         <TertiaryButton label="Tertiary Button" />
-        <Text fontWeight='light' fontSize='large'>I am a text element!</Text>
+        <Text element="p" fontWeight='light' fontSize='large'>I am a text element!</Text>
       </div>
     </ThemeProvider>
   )

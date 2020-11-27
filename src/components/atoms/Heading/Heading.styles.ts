@@ -27,4 +27,11 @@ export const componentStyles = () => ({
   }
 })
 
+export interface IHeadingStyles {
+  readonly h1: string
+  readonly h2: string
+  readonly h3: string
+  readonly h4: string
+}
+
 export const headingStyles = componentStyles()

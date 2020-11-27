@@ -1,21 +1,19 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
-import { headingStyles, base } from './Heading.styles'
+import { headingStyles, base, IHeadingStyles} from './Heading.styles'
+import {ElementType} from 'react'
+import {ITheme} from 'src/theme/themes'
 
-type Props = {
+export type HeadingProps = {
   children: string
-  element: string
+  element: any
 }
 
-/**
- * FIXME:
- *  - [ ]   Type '{ children: string; css: (theme: ITheme) => SerializedStyles; }' is not assignable to type 'IntrinsicAttributes'.
- *          Property 'children' does not exist on type 'IntrinsicAttributes'.
- */
-
-export const Heading = ({ children, element: Element }: Props) => {
-  return <Element css={[base(), headingStyles[Element]]}>{children}</Element>
+export const Heading = ({ children, element }: HeadingProps) => {
+  const Comp: ElementType = element
+  const elementStyleSelector: keyof IHeadingStyles = element
+  return <Comp css={[base(), headingStyles[elementStyleSelector]]}>{children}</Comp>
 }
 
 export default Heading

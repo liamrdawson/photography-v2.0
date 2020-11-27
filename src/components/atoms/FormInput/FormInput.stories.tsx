@@ -1,10 +1,10 @@
 import React from 'react'
-import { Meta } from '@storybook/react/types-6-0'
+import { Meta, Story } from '@storybook/react/types-6-0'
 
-import { TextInput, TextArea } from './FormInput'
+import { TextInput, TextArea, FormTypes } from './FormInput'
 
 export default {
-  title: 'Atoms/FormInput',
+  title: 'Components/Atoms/FormInput',
   component: TextInput,
   parameters: {
     docs: {
@@ -15,16 +15,14 @@ export default {
   }
 } as Meta
 
-// TODO: [ ] - change args from being implicit any
-
-const TextInputTemplate = (args) => <TextInput {...args} />
+const TextInputTemplate: Story<FormTypes> = (args) => <TextInput {...args} />
 export const FormInput = TextInputTemplate.bind({})
 FormInput.args = {
   label: 'I am a label',
   type: 'text'
 }
 
-const TextAreaTemplate = (args) => <TextArea {...args} />
+const TextAreaTemplate: Story<FormTypes>  = (args) => <TextArea {...args} />
 export const TextAreaInput = TextAreaTemplate.bind({})
 TextAreaInput.args = {
   label: 'I am a label'

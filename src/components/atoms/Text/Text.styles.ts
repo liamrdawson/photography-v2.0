@@ -1,8 +1,13 @@
 import { css } from '@emotion/core'
 import { ITheme } from '../../../theme/themes'
-import { typeScale, typeWeight } from '../../../theme/typography'
+import { typeScale, ITypeScale, typeWeight, ITypeWeight } from '../../../theme/typography'
 
-export const textStyles = (theme: ITheme) => (weight: string = 'light', size: string = 'normal') => css({
+/**
+ * TIP: Using a generic string as an index, TypeScript will complain that it can't guarantee that whatever string is passed into your function will actually match a property name on your interface.
+ *      An excellent workaround for this that was introduced in TypeScript 2.1 is keyof. This allows you to explicitly type something as a key of a certain class/interface.
+ */
+
+export const textStyles = (theme: ITheme) => (weight: keyof ITypeWeight = 'light', size: keyof ITypeScale = 'normal') => css({
   fontFamily: theme.primaryFont,
   color: theme.colour.primary,
   fontWeight: typeWeight[weight],
