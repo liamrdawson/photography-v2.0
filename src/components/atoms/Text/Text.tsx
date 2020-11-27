@@ -2,11 +2,9 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 import {useTheme} from 'emotion-theming'
-import {ITheme} from 'src/theme/themes'
+import {FC, ReactElement, ElementType} from 'react'
+import {ITheme, ITypeWeight, ITypeScale} from 'src/theme'
 import { textStyles } from './Text.styles'
-import {FC, ReactElement} from 'react'
-import {ITypeWeight, ITypeScale} from 'src/theme/typography'
-import {ElementType} from 'react'
 
 export type TextProps = {
   fontWeight: keyof ITypeWeight

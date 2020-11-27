@@ -1,7 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
-
 import { labelAndForm, labelStyle, input } from './FormInput.styles'
 
 export type FormTypes = {

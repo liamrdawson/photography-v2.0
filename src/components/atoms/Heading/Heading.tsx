@@ -1,9 +1,8 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
-import { headingStyles, base, IHeadingStyles} from './Heading.styles'
 import {ElementType} from 'react'
-import {ITheme} from 'src/theme/themes'
+import { headingStyles, base, IHeadingStyles} from './Heading.styles'
 
 export type HeadingProps = {
   children: string

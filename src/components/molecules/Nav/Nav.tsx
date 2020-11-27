@@ -2,24 +2,16 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 import Link from 'next/link'
-import {Text} from '../atoms/Text'
+import {Text} from 'src/components/atoms'
 
 interface NavTypes {
   pages: Array<PageObject>
-  // element: string
 }
 
 interface PageObject {
   pathName: string
   pageName: string
 }
-
-/**
- * 
- *    pages   = array
- *    page    = object
- *    []Name  = string
- */
 
 export const Nav = (props: NavTypes) => {
   const { pages } = props
