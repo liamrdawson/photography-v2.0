@@ -4,8 +4,9 @@ import { jsx } from '@emotion/core'
 
 import { labelAndForm, labelStyle, input } from './FormInput.styles'
 
-type FormTypes = {
+export type FormTypes = {
   label: string
+  type: string
 }
 
 export const TextInput = (props: FormTypes) => {

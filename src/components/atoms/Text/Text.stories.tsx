@@ -1,17 +1,17 @@
 import React from 'react'
-import { Meta } from '@storybook/react/types-6-0'
+import { Meta, Story } from '@storybook/react/types-6-0'
 
-import { Text } from './Text'
+import { Text, TextProps } from './Text'
 
 
 export default {
-  title: 'Atoms/Text',
+  title: 'Components/Atoms/Text',
   component: Text,
   parameters: {
     docs: {
       description: {
         component:
-          'The heading tag is used in HTML to define headings of a page.'
+          'The Text component renders its children and applies standard font styling. It receives two props `fontSize` and `fontWeight`.'
       }
     }
   },
@@ -33,7 +33,7 @@ export default {
 
 // TODO: [ ] - change args from being implicit any
 
-const TextTemplate = (args) => <Text {...args} />
+const TextTemplate: Story<TextProps> = (args) => <Text {...args} />
 export const TextComponent = TextTemplate.bind({})
 TextComponent.args = {
   children: 'The quick brown fox jumps over the lazy dog.',

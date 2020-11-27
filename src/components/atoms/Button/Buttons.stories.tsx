@@ -4,7 +4,7 @@ import { Meta } from '@storybook/react/types-6-0'
 import { PrimaryButton, SecondaryButton, TertiaryButton } from './Buttons'
 
 export default {
-  title: 'Atoms/Button',
+  title: 'Components/Atoms/Button',
   component: PrimaryButton,
   parameters: {
     docs: {
