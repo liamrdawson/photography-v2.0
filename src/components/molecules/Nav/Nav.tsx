@@ -1,28 +1,32 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, css } from '@emotion/core'
+import { jsx } from '@emotion/core'
 import Link from 'next/link'
 import {Text} from 'src/components/atoms'
+import {ITheme} from 'src/theme'
+import {useTheme} from 'emotion-theming'
+import {baseNav, baseUl, baseLink, dynamicStyle} from './Nav.styles'
 
-interface NavTypes {
+export interface NavTypes {
   pages: Array<PageObject>
 }
 
-interface PageObject {
+export interface PageObject {
   pathName: string
   pageName: string
 }
 
 export const Nav = (props: NavTypes) => {
   const { pages } = props
+  const theme: ITheme = useTheme()
   return (
-    <nav>
-      <ul>
+    <nav css={baseNav}>
+      <ul css={baseUl}>
         {pages.map( (page: PageObject) =>
           <li>
             <Link href={page.pathName}>
-              <a>
-                <Text element="p" fontWeight='light' fontSize='small'>
+              <a css={baseLink}>
+                <Text additionalStyles={dynamicStyle(theme)} element="a" fontWeight='light' fontSize='medium'>
                   {page.pageName}
                 </Text>
               </a>
