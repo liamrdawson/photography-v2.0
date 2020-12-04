@@ -1,8 +1,5 @@
 import { css } from '@emotion/core'
-
-import { ITheme } from '../../../theme/themes'
-import { typeScale, typeWeight} from '../../../theme/typography'
-import { SPACING } from '../../../theme/spacing'
+import { typeScale, typeWeight, SPACING, ITheme} from 'src/theme'
 
 export const labelAndForm = (theme: ITheme) =>
   css({
