@@ -1,16 +1,10 @@
 // Libraries
 import { ThemeProvider } from 'emotion-theming'
 // Utils
-import { defaultTheme } from 'src/theme/themes'
-// Components
-import {
-  PrimaryButton,
-  SecondaryButton,
-  TertiaryButton
-} from 'src/components/atoms/Button'
-import { Heading } from 'src/components/atoms/Heading'
-import {Text} from 'src/components/atoms/Text'
-import {Nav} from 'src/components/molecules/Nav'
+import { defaultTheme } from 'src/theme'
+// Atomic Components
+import {Text, Heading, PrimaryButton, SecondaryButton, TertiaryButton} from 'src/components/atoms'
+import {Nav} from 'src/components/molecules'
 
 const App = () => {
   return (
@@ -29,11 +23,11 @@ const App = () => {
       >
         <Nav pages={[
           { 
-            pageName: 'Number 1',
+            pageName: 'One',
             pathName: '/one'
           },
           { 
-            pageName: 'Duos',
+            pageName: 'Two',
             pathName: '/two'
           }, 
           ]} />

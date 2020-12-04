@@ -1,7 +1,5 @@
 import { css } from '@emotion/core'
-import { ITheme } from '../../../theme/themes'
-import { typeScale } from '../../../theme/typography'
-import { SPACING } from '../../../theme/spacing'
+import { ITheme, typeScale, SPACING } from 'src/theme'
 
 export const base = css({
   boxSizing: 'border-box',

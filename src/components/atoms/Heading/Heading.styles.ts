@@ -1,6 +1,6 @@
 import { css } from '@emotion/core'
-import { defaultTheme, ITheme } from '../../../theme/themes'
-import { typeScale } from '../../../theme/typography'
+import { defaultTheme, ITheme } from 'src/theme'
+import { typeScale } from 'src/theme'
 
 export const base = (theme: ITheme = defaultTheme) =>
   css({
