@@ -1,11 +1,11 @@
 import { css } from '@emotion/core'
-import { ITheme } from '../../../theme/themes'
 import {
+  ITheme,
   typeScale,
   ITypeScale,
   typeWeight,
   ITypeWeight
-} from '../../../theme/typography'
+} from 'src/theme'
 
 /**
  * TIP: Using a generic string as an index, TypeScript will complain that it can't guarantee that whatever string is passed into your function will actually match a property name on your interface.
