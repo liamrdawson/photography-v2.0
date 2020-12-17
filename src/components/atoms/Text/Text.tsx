@@ -1,12 +1,11 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, css } from '@emotion/core'
-import {useTheme} from 'emotion-theming'
-import {ITheme} from 'src/theme/themes'
+import { FC, ReactElement, ElementType } from 'react'
+import { jsx } from '@emotion/core'
+import { useTheme } from 'emotion-theming'
+import { ITheme } from 'src/theme/themes'
+import { ITypeWeight, ITypeScale } from 'src/theme/typography'
 import { textStyles } from './Text.styles'
-import {FC, ReactElement} from 'react'
-import {ITypeWeight, ITypeScale} from 'src/theme/typography'
-import {ElementType} from 'react'
 
 export type TextProps = {
   fontWeight: keyof ITypeWeight
@@ -15,11 +14,16 @@ export type TextProps = {
   children: string
 }
 
-export const Text: FC<TextProps> =  ({ children, fontSize, fontWeight, element }): ReactElement => {
+export const Text: FC<TextProps> = ({
+  children = '' as string,
+  fontSize = 'normal' as keyof ITypeScale,
+  fontWeight = 'light' as keyof ITypeWeight,
+  element = '' as string
+}): ReactElement => {
   const theme: ITheme = useTheme()
   const base = textStyles(theme)(fontWeight, fontSize)
   const Comp = element
-  return (<Comp css={base} >{children}</Comp>)
+  return <Comp css={base}>{children}</Comp>
 }
 
 export default Text

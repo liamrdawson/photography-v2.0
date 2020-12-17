@@ -3,7 +3,6 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 
 import { Text, TextProps } from './Text'
 
-
 export default {
   title: 'Components/Atoms/Text',
   component: Text,
@@ -30,8 +29,6 @@ export default {
     }
   }
 } as Meta
-
-// TODO: [ ] - change args from being implicit any
 
 const TextTemplate: Story<TextProps> = (args) => <Text {...args} />
 export const TextComponent = TextTemplate.bind({})

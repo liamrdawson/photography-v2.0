@@ -1,8 +1,8 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, css } from '@emotion/core'
+import { jsx } from '@emotion/core'
 import Link from 'next/link'
-import {Text} from '../atoms/Text'
+import { Text } from '../atoms/Text'
 
 interface NavTypes {
   pages: Array<PageObject>
@@ -15,7 +15,7 @@ interface PageObject {
 }
 
 /**
- * 
+ *
  *    pages   = array
  *    page    = object
  *    []Name  = string
@@ -26,18 +26,20 @@ export const Nav = (props: NavTypes) => {
   return (
     <nav>
       <ul>
-        {pages.map( (page: PageObject) =>
+        {pages.map((page: PageObject) => (
           <li>
             <Link href={page.pathName}>
               <a>
-                <Text element="p" fontWeight='light' fontSize='small'>
+                <Text element="p" fontWeight="light" fontSize="small">
                   {page.pageName}
                 </Text>
               </a>
             </Link>
           </li>
-        )}
+        ))}
       </ul>
     </nav>
   )
 }
+
+export default Nav

@@ -1,7 +1,12 @@
 import React from 'react'
-import { Meta } from '@storybook/react/types-6-0'
+import { Meta, Story } from '@storybook/react/types-6-0'
 
-import { PrimaryButton, SecondaryButton, TertiaryButton } from './Buttons'
+import {
+  PrimaryButton,
+  SecondaryButton,
+  TertiaryButton,
+  ButtonTypes
+} from './Buttons'
 
 export default {
   title: 'Components/Atoms/Button',
@@ -15,21 +20,25 @@ export default {
   }
 } as Meta
 
-// TODO: [ ] - change args from being implicit any
-
-const PrimaryTemplate = (args) => <PrimaryButton {...args} />
+const PrimaryTemplate: Story<ButtonTypes> = (args) => (
+  <PrimaryButton {...args} />
+)
 export const Primary = PrimaryTemplate.bind({})
 Primary.args = {
   label: 'Primary Button'
 }
 
-const SecondaryTemplate = (args) => <SecondaryButton {...args} />
+const SecondaryTemplate: Story<ButtonTypes> = (args) => (
+  <SecondaryButton {...args} />
+)
 export const Secondary = SecondaryTemplate.bind({})
 Secondary.args = {
   label: 'Secondary Button'
 }
 
-const TertiaryTemplate = (args) => <TertiaryButton {...args} />
+const TertiaryTemplate: Story<ButtonTypes> = (args) => (
+  <TertiaryButton {...args} />
+)
 export const Tertiary = TertiaryTemplate.bind({})
 Tertiary.args = {
   label: 'Tertiary Button'

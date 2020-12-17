@@ -3,7 +3,7 @@
 import { jsx } from '@emotion/core'
 import { primary, secondary, tertiary } from './Buttons.styles'
 
-type ButtonTypes = {
+export type ButtonTypes = {
   label: string
 }
 
