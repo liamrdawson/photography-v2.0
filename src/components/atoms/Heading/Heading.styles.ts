@@ -1,4 +1,4 @@
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 import { defaultTheme, ITheme } from 'src/theme'
 import { typeScale } from 'src/theme'
 

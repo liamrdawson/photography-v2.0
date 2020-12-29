@@ -1,4 +1,5 @@
 {
+  "types": ["node", "@emotion/core"],
   "compilerOptions": {
     "baseUrl": ".",
     "target": "es5",

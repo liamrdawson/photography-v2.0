@@ -1,4 +1,4 @@
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 import { ITheme, typeScale, SPACING } from 'src/theme'
 
 export const base = css({

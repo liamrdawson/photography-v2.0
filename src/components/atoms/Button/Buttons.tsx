@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx } from '@emotion/core'
+import { jsx } from '@emotion/react'
 import { primary, secondary, tertiary } from './Buttons.styles'
 
 export type ButtonTypes = {

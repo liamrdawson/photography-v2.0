@@ -1,4 +1,4 @@
-import { ThemeProvider } from 'emotion-theming'
+import { ThemeProvider } from '@emotion/react'
 import { defaultTheme } from '../src/theme'
 
 export const parameters = {

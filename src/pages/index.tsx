@@ -1,10 +1,16 @@
 // Libraries
-import { ThemeProvider } from 'emotion-theming'
+import { ThemeProvider } from '@emotion/react'
 // Utils
 import { defaultTheme } from 'src/theme'
 // Atomic Components
-import {Text, Heading, PrimaryButton, SecondaryButton, TertiaryButton} from 'src/components/atoms'
-import {Nav} from 'src/components/molecules'
+import {
+  Text,
+  Heading,
+  PrimaryButton,
+  SecondaryButton,
+  TertiaryButton
+} from 'src/components/atoms'
+import { Nav } from 'src/components/molecules'
 
 const App = () => {
   return (
@@ -21,21 +27,25 @@ const App = () => {
           alignItems: 'center'
         }}
       >
-        <Nav pages={[
-          { 
-            pageName: 'One',
-            pathName: '/one'
-          },
-          { 
-            pageName: 'Two',
-            pathName: '/two'
-          }, 
-          ]} />
+        <Nav
+          pages={[
+            {
+              pageName: 'One',
+              pathName: '/one'
+            },
+            {
+              pageName: 'Two',
+              pathName: '/two'
+            }
+          ]}
+        />
         <Heading element="h1">👋 🌏</Heading>
         <PrimaryButton label="Primary Button" />
         <SecondaryButton label="Secondary Button" />
         <TertiaryButton label="Tertiary Button" />
-        <Text element="p" fontWeight='light' fontSize='large'>I am a text element!</Text>
+        <Text element="p" fontWeight="light" fontSize="large">
+          I am a text element!
+        </Text>
       </div>
     </ThemeProvider>
   )

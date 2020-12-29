@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx } from '@emotion/core'
+import { jsx } from '@emotion/react'
 import { ElementType } from 'react'
 import { headingStyles, base, IHeadingStyles } from './Heading.styles'
 
