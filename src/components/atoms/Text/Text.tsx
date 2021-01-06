@@ -8,10 +8,10 @@ import { textStyles } from './Text.styles'
 export type TextProps = {
   fontWeight: keyof ITypeWeight
   fontSize: keyof ITypeScale
-  element: ElementType
+  element: any
   children: string
   css?: any
-  additionalStyles: SerializedStyles
+  additionalStyles?: SerializedStyles
 }
 
 export const Text = ({

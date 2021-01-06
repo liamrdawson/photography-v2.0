@@ -1,8 +1,8 @@
 {
   "presets": [
-    [
-      "next/babel"
-    ], 
+    ["next/babel"],
+    "@babel/preset-env",
+    "@babel/preset-typescript",
     [
       "@emotion/babel-preset-css-prop",
       {
@@ -10,13 +10,5 @@
         "labelFormat": "[local]"
       }
     ]
-  ],
-  "env": {
-    "production": {
-      "plugins": ["emotion"]
-    },
-    "development": {
-      "plugins": [["emotion", { "sourceMap": true }]]
-    }
-  }
+  ]
 }

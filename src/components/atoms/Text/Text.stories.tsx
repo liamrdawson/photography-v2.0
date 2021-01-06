@@ -1,7 +1,7 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react/types-6-0'
 
-import { Text, TextProps } from './Text'
+import { Text, TextProps } from './index'
 
 export default {
   title: 'Components/Atoms/Text',
@@ -15,6 +15,12 @@ export default {
     }
   },
   argTypes: {
+    element: {
+      control: {
+        type: 'select',
+        options: ['p', 'a']
+      }
+    },
     fontSize: {
       control: {
         type: 'select',
@@ -26,6 +32,16 @@ export default {
         type: 'select',
         options: ['light', 'medium', 'bold', 'black']
       }
+    },
+    css: {
+      table: {
+        disable: true
+      }
+    },
+    additionalStyles: {
+      table: {
+        disable: true
+      }
     }
   }
 } as Meta
@@ -35,5 +51,6 @@ export const TextComponent = TextTemplate.bind({})
 TextComponent.args = {
   children: 'The quick brown fox jumps over the lazy dog.',
   fontSize: 'normal',
-  fontWeight: 'light'
+  fontWeight: 'light',
+  element: 'p'
 }
