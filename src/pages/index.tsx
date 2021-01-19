@@ -19,8 +19,7 @@ const App = () => {
         style={{
           display: 'flex',
           flexDirection: 'column',
-          width: '800px',
-          height: '400px',
+          maxWidth: '800px',
           justifyContent: 'space-around',
           margin: 'auto',
           textAlign: 'center',

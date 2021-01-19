@@ -1,23 +1,36 @@
 import { css } from '@emotion/react'
-import { SPACING, ITheme } from 'src/theme'
+import { SPACING, LAYOUT, ITheme } from 'src/theme'
 
 export const baseNav = () =>
   css({
-    border: 'red solid 1px',
     display: 'flex',
-    flexDirection: 'row'
+    height: '100%'
   })
 
-export const baseUl = () =>
+export const baseUl = (theme: ITheme) =>
   css({
     listStyle: 'none',
     padding: 0,
     margin: 0,
     display: 'flex',
-    flexDirection: 'row',
     justifyContent: 'space-between',
+    flexDirection: 'column',
+    height: '100%',
+    '@media(min-width: 420px)': {
+      flexDirection: 'row',
+      margin: 0
+    },
     li: {
-      margin: `0 ${SPACING[8]}px`
+      marginTop: `${LAYOUT[7]}px`,
+      '@media(min-width: 420px)': {
+        margin: `0 ${SPACING[8]}px`
+      }
+    },
+    'li a a': {
+      color: theme.colour.primary,
+      '&:hover': {
+        color: theme.colour.tertiary
+      }
     }
   })
 

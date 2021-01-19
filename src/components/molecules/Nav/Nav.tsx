@@ -6,7 +6,7 @@ import { Text } from 'src/components/atoms'
 import { ITheme } from 'src/theme'
 import { baseNav, baseUl, baseLink, dynamicStyle } from './Nav.styles'
 
-export interface NavTypes {
+export interface NavProps {
   pages: Array<PageObject>
 }
 
@@ -15,7 +15,7 @@ export interface PageObject {
   pageName: string
 }
 
-export const Nav = (props: NavTypes) => {
+export const Nav = (props: NavProps) => {
   const { pages } = props
   const theme: ITheme = useTheme()
   return (

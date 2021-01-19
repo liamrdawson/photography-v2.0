@@ -32,8 +32,8 @@ export const typeWeight = {
 }
 
 export interface ITypeWeight {
-  readonly light: number,
-  readonly medium: number,
-  readonly bold: number,
+  readonly light: number
+  readonly medium: number
+  readonly bold: number
   readonly black: number
 }
