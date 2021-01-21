@@ -1,16 +1,18 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx } from '@emotion/react'
+import { jsx, useTheme } from '@emotion/react'
 import { primary, secondary, tertiary } from './Buttons.styles'
 
 export type ButtonTypes = {
   label: string
+  isDisabled: boolean
 }
 
 export const PrimaryButton = (props: ButtonTypes) => {
-  const { label } = props
+  const { label, isDisabled } = props
+  const theme = useTheme()
   return (
-    <button type="button" css={primary}>
+    <button type="button" css={primary(theme, isDisabled)}>
       {label}
     </button>
   )

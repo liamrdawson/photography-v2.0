@@ -13,11 +13,11 @@ export const base = css({
   transition: 'background-color 0.2s linear, color 0.2s linear'
 })
 
-export const primary = (theme: ITheme) =>
+export const primary = (theme: ITheme, isDisabled: boolean) =>
   css(
     {
       textTransform: 'uppercase',
-      backgroundColor: theme.colour.primary,
+      backgroundColor: isDisabled ? 'red' : theme.colour.primary,
       color: theme.colour.textOnPrimary,
       border: 'none',
       '&:hover': {

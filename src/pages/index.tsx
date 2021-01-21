@@ -10,7 +10,7 @@ import {
   SecondaryButton,
   TertiaryButton
 } from 'src/components/atoms'
-import { Nav } from 'src/components/molecules'
+import { Nav, ContactForm } from 'src/components/molecules'
 
 const App = () => {
   return (
@@ -45,6 +45,7 @@ const App = () => {
         <Text element="p" fontWeight="light" fontSize="large">
           I am a text element!
         </Text>
+        <ContactForm />
       </div>
     </ThemeProvider>
   )

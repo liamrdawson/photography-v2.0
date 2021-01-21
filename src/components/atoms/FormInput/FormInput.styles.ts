@@ -17,11 +17,17 @@ export const input = (theme: ITheme) =>
     padding: SPACING[4],
     fontSize: typeScale.normal,
     backgroundColor: theme.colour.formBackground,
-    borderColor: theme.colour.primary
+    borderColor: theme.colour.primary,
+    height: '100%',
+    '&:invalid': {
+      outline: 'none',
+      boxShadow: `0 0 0 4px ${theme.colour.tertiary}`
+    }
   })
 
 export const labelStyle = () =>
   css({
+    textAlign: 'left',
     fontSize: typeScale.small,
     fontWeight: typeWeight.light,
     marginBottom: SPACING[3]
