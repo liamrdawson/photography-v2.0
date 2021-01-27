@@ -2,7 +2,7 @@ import { css } from '@emotion/react'
 
 export const FormStyle = () =>
   css({
-    width: '100%',
+    minWidth: '700px',
     display: 'grid',
     gridGap: '25px',
     gridTemplateColumns: '1fr 1fr',

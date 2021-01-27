@@ -11,10 +11,13 @@ import {
   FormMessageStyle
 } from './ContactForm.styles'
 
-const formIsValid = () => {
-  // TODO: check if the form inputs are all entered with the correct data
-  // return boolean value
-}
+//  TODO:
+//  Check if the form inputs are all entered with the correct data
+//  Check first name contains alphabetic characters
+//  Check last name contains alphabetic characters
+//  Check email contains a valid email address
+//  Check that text area contains content.
+//  Return boolean value if all are true or false
 
 export const ContactForm = () => {
   return (

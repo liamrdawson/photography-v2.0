@@ -22,7 +22,7 @@ FormInput.args = {
   type: 'text'
 }
 
-const TextAreaTemplate: Story<FormTypes>  = (args) => <TextArea {...args} />
+const TextAreaTemplate: Story<FormTypes> = (args) => <TextArea {...args} />
 export const TextAreaInput = TextAreaTemplate.bind({})
 TextAreaInput.args = {
   label: 'I am a label'

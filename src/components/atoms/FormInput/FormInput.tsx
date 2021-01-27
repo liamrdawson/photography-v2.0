@@ -11,7 +11,6 @@ export type FormTypes = {
 }
 
 export const TextInput = ({ label, type, additionalStyles }: FormTypes) => {
-  // const { label, type, additionalStyles } = props
   const theme: ITheme = useTheme()
   const styling = [additionalStyles, labelAndForm(theme)]
   return (
@@ -25,7 +24,6 @@ export const TextInput = ({ label, type, additionalStyles }: FormTypes) => {
 }
 
 export const TextArea = ({ label, additionalStyles }: FormTypes) => {
-  // const { label } = props
   const theme: ITheme = useTheme()
   const styling = [additionalStyles, labelAndForm(theme)]
   return (
