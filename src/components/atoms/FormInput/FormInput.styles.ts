@@ -12,7 +12,7 @@ export const input = (theme: ITheme) =>
   css({
     fontFamily: theme.primaryFont,
     boxSizing: 'border-box',
-    borderRadius: 2,
+    borderRadius: 4,
     borderWidth: SPACING[1],
     padding: SPACING[4],
     fontSize: typeScale.normal,

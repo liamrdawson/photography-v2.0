@@ -11,6 +11,7 @@ import {
   TertiaryButton
 } from 'src/components/atoms'
 import { Nav, ContactForm } from 'src/components/molecules'
+import { Select } from 'src/components/atoms/Select/Select'
 
 const App = () => {
   return (
@@ -46,6 +47,7 @@ const App = () => {
           I am a text element!
         </Text>
         <ContactForm />
+        <Select />
       </div>
     </ThemeProvider>
   )
