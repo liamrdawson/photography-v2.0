@@ -1,6 +1,6 @@
-// import {
-//   Heading,
-// } from 'verso-ui'
+import {
+  Heading,
+} from 'verso-ui'
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
         alignItems: 'center'
       }}
     >
-      <h1>Hello World</h1>
+      <Heading element="h4">Hi there</Heading>
 
     </div>
   )

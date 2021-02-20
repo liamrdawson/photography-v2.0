@@ -5,6 +5,7 @@ module.exports = {
   webpack: (config) => {
     // Note: we provide webpack above so you should not `require` it
     // Perform customizations to webpack config
+    config.resolve.symlinks = false
     config.resolve.alias['react'] = path.resolve('node_modules/react')
     config.resolve.alias['react-dom'] = path.resolve('node_modules/react-dom')
 
