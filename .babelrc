@@ -1,14 +1,20 @@
 {
+  "plugins": [
+   ["@babel/plugin-transform-react-jsx",
+    {
+      "runtime": "automatic"
+    }]
+  ],
   "presets": [
-    ["next/babel"],
-    "@babel/preset-env",
-    "@babel/preset-typescript",
-    [
-      "@emotion/babel-preset-css-prop",
-      {
-        "autoLabel": true,
-        "labelFormat": "[local]"
-      }
-    ]
+    ["next/babel"]
+    // "@babel/preset-env",
+    // "@babel/preset-typescript",
+    // [
+    //   "@emotion/babel-preset-css-prop",
+    //   {
+    //     "autoLabel": true,
+    //     "labelFormat": "[local]"
+    //   }
+    // ]
   ]
 }
